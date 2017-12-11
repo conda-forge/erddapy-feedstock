@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: erddapy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/erddapy/erddapy-{{ version }}.tar.gz
-  sha256: eb697edb9d1370132ff5d6f219b619f0f7ef87f09cc136dbaebd04f8996c8ed0
+  sha256: b3138bb23108bea470179c1c8b6bbf5006322975e36fe67738eda06e5da892e6
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - python
     - pandas
     - requests
+    - netcdf4
 
 test:
   imports:
