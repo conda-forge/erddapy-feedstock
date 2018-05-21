@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: erddapy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/erddapy/erddapy-{{ version }}.tar.gz
-  sha256: a2262a60f9edc2df26240fc9e3a1b7f9f0c01e56163addbf2eb36687efeee023
+  sha256: 8392963c17970d6e61d2e032813182d0cd3527598aeaea843f1af9ddd84d3da7
 
 build:
   number: 0
@@ -27,7 +27,7 @@ test:
     - erddapy
 
 about:
-  home: https://github.com/ocefpaf/erddapy
+  home: https://github.com/pyoceans/erddapy
   license: BSD 3-Clause
   license_file: LICENSE.txt
   summary: 'Python interface for ERDDAP'
