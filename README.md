@@ -1,7 +1,7 @@
 About erddapy
 =============
 
-Home: https://github.com/ocefpaf/erddapy
+Home: https://github.com/pyoceans/erddapy
 
 Package license: BSD 3-Clause
 
