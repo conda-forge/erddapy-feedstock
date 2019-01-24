@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: erddapy
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/erddapy/erddapy-{{ version }}.tar.gz
-  sha256: b3c0bf7f8fbf968092223c599fdc913a693000ffac503b8b73422e02555d0c66
+  sha256: 0735335fec7d70b357fa1e565dbebd892794a1d8a6a35bf47aebf640cdc4e4d6
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -28,7 +28,7 @@ test:
 
 about:
   home: https://github.com/pyoceans/erddapy
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: 'Python interface for ERDDAP'
 
