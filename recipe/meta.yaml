@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: erddapy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/erddapy/erddapy-{{ version }}.tar.gz
-  sha256: d3a00773223398e84f8ad4437b4211f05d07f2fa9c9826a6c056584f742cd445
+  sha256: e94b4da3e6f3feaea69a5ce6be81b1fde24e0ddc8ea1838eb0623b904135b096
 
 build:
   number: 0
