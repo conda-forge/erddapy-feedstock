@@ -23,8 +23,12 @@ requirements:
     - requests
 
 test:
+  requires:
+    - pip
   imports:
     - erddapy
+  commands:
+    - pip check
 
 about:
   home: https://github.com/pyoceans/erddapy
