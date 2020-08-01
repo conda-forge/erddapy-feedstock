@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: erddapy
@@ -6,20 +6,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/erddapy/erddapy-{{ version }}.tar.gz
-  sha256: 187d2be5b670a034f0c11da0a63b6eed77cc6a4914b2db57c470f13b522976a7
+  sha256: 142fe4fd1af74d10785a245a43b6b4793f723169d4db9ceeb6f0b337b80461d0
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.6,<4
     - pip
+    - setuptools_scm
   run:
     - python >=3.6,<4
-    - pandas
+    - pandas >=0.20.3
     - requests
 
 test:
