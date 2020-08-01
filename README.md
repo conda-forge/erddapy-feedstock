@@ -5,7 +5,7 @@ Home: https://github.com/pyoceans/erddapy
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python interface for ERDDAP
 
