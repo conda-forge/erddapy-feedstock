@@ -35,7 +35,7 @@ about:
   home: https://github.com/pyoceans/erddapy
   license: BSD-3-Clause
   license_file: LICENSE.txt
-  summary: 'Python interface for ERDDAP'
+  summary: Python interface for ERDDAP
 
 extra:
   recipe-maintainers:
