@@ -1,17 +1,19 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: erddapy
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/e/erddapy/erddapy-{{ version }}.tar.gz
-  sha256: c12d3919f6f53e6049f0cf67f48b94748aa017f48fd3c50279c9ef12d911aa11
+  url: https://github.com/ioos/erddapy/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 942fd45abd705679534d818e9eefda7a8ce7e1b75fdc4869b68a1f9e882cd096
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
