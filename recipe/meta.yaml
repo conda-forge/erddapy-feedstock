@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
   name: erddapy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/ioos/erddapy/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 942fd45abd705679534d818e9eefda7a8ce7e1b75fdc4869b68a1f9e882cd096
+  sha256: cdd28613f5ab769cdb6325bc43125d77c464e5e42880bc478ac39e00ae9b0bf3
 
 build:
   number: 0
