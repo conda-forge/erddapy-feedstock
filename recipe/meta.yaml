@@ -1,37 +1,39 @@
-{% set version = "1.2.1" %}
+{% set name = "erddapy" %}
+{% set version = "2.0.0" %}
 
 package:
-  name: erddapy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/ioos/erddapy/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 100e82f4c1370e3e2dec732e606e8dde670a4ec45939bb61505ced9c10726b30
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erddapy-{{ version }}.tar.gz
+  sha256: fb30221e6cb3a5f1804157ca44efdbd6e0768221d94da2e592143b189dc4dd17
 
 build:
-  number: 0
   noarch: python
-  script:
-    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
-    - {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.6,<4
+    - python >=3.8
+    - setuptools >=42
+    - setuptools-scm
+    - wheel
     - pip
-    - setuptools_scm
   run:
-    - python >=3.6,<4
-    - pandas >=0.20.3
-    - requests
+    - python >=3.8
+    - httpx
+    - pandas <3,>=0.25.2
+    - pytz
 
 test:
-  requires:
-    - pip
   imports:
     - erddapy
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/pyoceans/erddapy
