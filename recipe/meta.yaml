@@ -1,5 +1,5 @@
 {% set name = "erddapy" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - setuptools >=42
     - setuptools-scm
     - wheel
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - httpx
     - pandas <3,>=0.25.2
     - pytz
