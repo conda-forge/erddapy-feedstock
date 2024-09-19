@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erddapy-{{ version }}.tar.gz
-  sha256: 3dd01302433e7aa0adbb53fb6419db93231afcc6295abe104957dcd1f0ffeb56
+  sha256: 83122e318801504068e2edae3bcafb8741a453a5786a9eefee324761ed4cac9b
 
 build:
   noarch: python
