@@ -1,5 +1,5 @@
 {% set name = "erddapy" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erddapy-{{ version }}.tar.gz
-  sha256: 83122e318801504068e2edae3bcafb8741a453a5786a9eefee324761ed4cac9b
+  sha256: 0206dcba3954340281a9e283d9bc3925581205492531d98775c65a61cb23bb90
 
 build:
   noarch: python
