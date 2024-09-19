@@ -1,5 +1,5 @@
 {% set name = "erddapy" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erddapy-{{ version }}.tar.gz
-  sha256: 3dd01302433e7aa0adbb53fb6419db93231afcc6295abe104957dcd1f0ffeb56
+  sha256: 83122e318801504068e2edae3bcafb8741a453a5786a9eefee324761ed4cac9b
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - setuptools >=42
     - setuptools-scm
     - wheel
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - httpx
     - pandas <3,>=0.25.2
     - pytz
