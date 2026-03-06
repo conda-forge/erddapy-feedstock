@@ -1,6 +1,5 @@
-{% set python_min = "3.10" %}
 {% set name = "erddapy" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erddapy-{{ version }}.tar.gz
-  sha256: 944d8ba5b10d4c5454dab21127ea427fdd9954c63688595097b50ec7cdb68d9b
+  sha256: a9f3209fa64393787794d0d0c3b71c2b4b185a8ec332e2635c323033468445ee
 
 build:
   noarch: python
@@ -25,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - httpx >=0.25.0
-    - pandas <3,>=0.25.2
+    - pandas >=0.25.2,<4
     - pytz
 
 test:
