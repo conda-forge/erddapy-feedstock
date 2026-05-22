@@ -3,11 +3,13 @@ About erddapy-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/erddapy-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/pyoceans/erddapy
+Home: https://github.com/ioos/erddapy
 
 Package license: BSD-3-Clause
 
 Summary: Python interface for ERDDAP
+
+Documentation: https://ioos.github.io/erddapy/
 
 Current build status
 ====================
