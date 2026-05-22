@@ -1,3 +1,4 @@
+{% set python_min = "3.11" %}
 {% set name = "erddapy" %}
 {% set version = "3.2.0" %}
 
@@ -24,7 +25,6 @@ requirements:
   run:
     - requests
     - python >={{ python_min }}
-    - httpx >=0.25.0
     - pandas <4,>=0.25.2
     - pytz
 
