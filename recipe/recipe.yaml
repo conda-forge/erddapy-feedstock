@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "3.2.0"
+  version: "3.2.1"
 
 package:
   name: erddapy
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/erddapy/erddapy-${{ version }}.tar.gz
-  sha256: 523997b8e5cfc91dc96bb27ebde3031d3639ec2a619a610d87261865f3704e6f
+  sha256: c5c5a3f96804b4509f04340e2141fb7902d8122bc9e563944e60db8962a75668
 
 build:
   number: 0
